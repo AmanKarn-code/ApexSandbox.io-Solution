@@ -1,8 +1,8 @@
 public Integer nextPrime(Integer num) {
     //code here
     // num=+1;
-    num+=1;
     while(true){
+        num+=1;
         Boolean isPrime = true;
         for(integer i=2;i<num/2;i++){
             if(math.mod(num,i)==0){
@@ -14,5 +14,5 @@ public Integer nextPrime(Integer num) {
         }
     num+=1;
     }
-    return num;
+    // return num;
 }
