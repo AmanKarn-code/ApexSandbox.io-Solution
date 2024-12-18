@@ -4,7 +4,7 @@ public Integer fibonacci(Integer n) {
     integer a=1;
     integer b=0;
     for(integer i=0;i<n-1;i++){
-        b=0+a+b;
+        b=1+a+b;
         a=b;
     }
     return b;
