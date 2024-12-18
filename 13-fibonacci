@@ -1,14 +1,18 @@
 public Integer fibonacci(Integer n) {
     //code here
-    integer s=0;
-    integer b=1;
-    integer a=0;
-    integer d;
-    for(integer i=0;i<n;i++){
-        s=a+b;
-        b=a;
-        d=s;
-        b=d;
+    // iteger s=1;
+     if (n <= 0) {
+        return 0;
+    } else if (n == 1) {
+        return 1;
     }
-    return s;
+    integer a=1;
+    integer b=0;
+    for(integer i=2;i<=n;i++){
+        integer temp=a+b;
+        a=b;
+        b=temp;
+
+    }
+    return b;
 }
