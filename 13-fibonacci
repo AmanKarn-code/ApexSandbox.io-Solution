@@ -3,7 +3,7 @@ public Integer fibonacci(Integer n) {
     // iteger s=1;
     integer a=1;
     integer b=0;
-    for(integer i=0;i<n;i++){
+    for(integer i=0;i<=n;i++){
         b=1+a+b;
         a=b;
     }
