@@ -4,5 +4,11 @@ public String changeTimeFormat(String strTime) {
     if(t[0]>'12'){
         return Integer.valueOf(t[0])-12+':'+t[1]+' '+'PM';
     }
+    if(t[0]=='12'){
+        return t[0]+':'+t[1]+' '+'PM';
+    }
+    if(t[0]=='00'){
+        return 12+':'+t[1]+' '+'AM';
+    }
     return t[0]+':'+t[1]+' '+'AM';
 }
