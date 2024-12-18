@@ -1,7 +1,6 @@
 public Integer nextPrime(Integer num) {
     //code here
     // num=+1;
-     Integer j = (num < 2) ? return 2 : num + 1;
     while(true){
         num+=1;
         Boolean isPrime = true;
