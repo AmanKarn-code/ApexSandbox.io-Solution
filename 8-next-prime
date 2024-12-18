@@ -4,8 +4,8 @@ public Integer nextPrime(Integer num) {
     while(true){
         for(integer i=1;i<num/2;i++){
             if(math.mod(num,i)==0){
-                break;
         num+=1;
+                break;
             }
         }
         return num;
