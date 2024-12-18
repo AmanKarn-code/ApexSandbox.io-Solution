@@ -2,7 +2,10 @@ public String changeTimeFormat(String strTime) {
     //code here
     list<string> t=strTime.split('\\:');
     if(t[0]>'12'){
-        return Integer.valueOf(t[0])-12+':'+t[1]+' '+'PM';
+        if(Integer.valueOf(t[0])-12<10){
+            return '0'+valueOf(t[0])-12+':'+t[1]+' '+'PM';
+        }
+        return valueOf(t[0])-12+':'+t[1]+' '+'PM';
     }
     if(t[0]=='12'){
         return t[0]+':'+t[1]+' '+'PM';
