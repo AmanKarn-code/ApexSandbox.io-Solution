@@ -2,8 +2,9 @@ public String changeTimeFormat(String strTime) {
     //code here
     list<string> t=strTime.split('\\:');
     if(t[0]>'12'){
-        if(Integer.valueOf(t[0])-12<10){
-            return 'O'+Integer.valueOf(t[0])-12+':'+t[1]+' '+'PM';
+          Integer hour = Integer.valueOf(t[0]) - 12;
+        if(hour<10){
+            return 'O'+hour+':'+t[1]+' '+'PM';
         }
         return Integer.valueOf(t[0])-12+':'+t[1]+' '+'PM';
     }
