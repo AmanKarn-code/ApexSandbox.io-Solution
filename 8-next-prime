@@ -12,6 +12,6 @@ public Integer nextPrime(Integer num) {
         if(isPrime){
         return num;
         }
-    }
     num+=1;
+    }
 }
