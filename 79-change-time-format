@@ -1,0 +1,8 @@
+public String changeTimeFormat(String strTime) {
+    //code here
+    list<string> t=strTime.split('\\:');
+    if(valueOf(t)>12){
+        return t[0]-'12'+':'+t[1]+' '+'PM';
+    }
+    return t[0]-'12'+':'+t[1]+' '+'AM';
+}
